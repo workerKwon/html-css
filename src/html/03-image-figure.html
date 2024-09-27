@@ -9,9 +9,30 @@
     <h1>이미지 삽입하기</h1>
     <!-- 이미지 리소스를 삽입할 때는 img 태그를 사용할 수 있으며 리소스는 src 속성으로 이미지 설명을 alt 속성으로 지정 -->
     <!-- 상대경로 이미지 지정 -->
-    <img src="./../assets/food/icecream.webp" alt="" />
+    <img
+      src="./../assets/food/icecream.webp"
+      alt="벤엔제리스 파인트 아이스크림"
+    />
 
     <!-- 절대경로 이미지 지정 -->
-    <img src="/src/assets/food/icecream.webp" alt="" />
+    <img
+      src="/src/assets/food/icecream.webp"
+      alt="벤엔제리스 파인트 아이스크림"
+    />
+
+    <!-- 벡터 이미지 삽입(img 요소를 사용할 경우) -->
+    <!-- <img src="./../assets/svg/chitchat.svg" alt="팝콘" /> -->
+
+    <!-- Lazy 로딩(지연로딩) -->
+    <img
+      src="./../assets/drama/mon-friend-son-narrow.webp"
+      alt="엄마 친구 아들"
+      loading="lazy"
+    />
+    <img
+      src="./../assets/drama/mon-friend-son-wide.webp"
+      alt="엄마 친구 아들"
+      loading="lazy"
+    />
   </body>
 </html>
