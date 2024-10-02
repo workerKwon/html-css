@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>비디오와 iframe | Techit</title>
+    </head>
+    <body>
+        <h1>비디오 포함하기</h1>
+        <figure>
+            <video class="fullsize" poster="./../assets/video/poster.jpg" controls autoplay="true" muted>
+                <source src="../assets/video/google-developer-stories.mp4" type="video/mp4" />
+                <source src="../assets/video/google-developer-stories.mov" type="video/mov" />
+                <source src="../assets/video/google-developer-stories.ogg" type="video/ogg" />
+                <source src="../assets/video/google-developer-stories.webm" type="video/webm" />
+                <track src="../assets/video/google-developer-stories-subtitles-en.vtt" kind="captions" srclang="en" label="English Caption" />
+            </video>
+            <figcaption>구글 개발자 이야기</figcaption>
+        </figure>
+
+        <hr />
+        <figure>
+            <div class="iframe-container iframe16">
+                <iframe class="fullsize" width="560" height="315" title="웹접근성과 웹표준 개념" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/fUcIe7-2zxw"></iframe>
+            </div>
+        </figure>
+    </body>
+</html>
