@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>반응형 이미지 | Techit</title>
+    </head>
+    <body>
+        <h1>picture와 source 요소</h1>
+
+        <figure>
+            <img src="./../assets/logo/netflix@1x.png" alt="" srcset="./../assets/logo/netflix@1x.webp" />
+            <figcaption>넷플릭스</figcaption>
+        </figure>
+
+        <hr />
+
+        <figure>
+            <picture>
+                <source srcset="./../assets/rwd/image-1x.png 1x, ./../assets/rwd/image-2x.png 2x, ./../assets/rwd/image-3x.png 3x, ./../assets/rwd/image-4x.png 4x" />
+                <img src="./../assets/rwd/image-src.png" alt="" />
+            </picture>
+            <figcaption>해상도별 렌더링 이미지 소스</figcaption>
+        </figure>
+    </body>
+</html>
