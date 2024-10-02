@@ -11,11 +11,12 @@
         <form action="/" method="get">
             <fieldset>
                 <legend>폼 양식 설명</legend>
-                <p><input type="text" name="" id="" required /></p>
-                <p><input type="search" name="search" id="search" /></p>
-                <p><input type="email" name="email" id="email" required /></p>
-                <p><input type="tel" name="phone" id="phone" required /></p>
-
+                <p><label for="name">이름</label> <input type="text" name="name" id="name" required /></p>
+                <p><label for="search">검색어</label> <input type="search" name="search" id="search" /></p>
+                <p><label for="email">이메일</label> <input type="email" name="email" id="email" required /></p>
+                <p><label for="phone">연락처</label> <input type="tel" name="phone" id="phone" required /></p>
+                <p><input value="회고A팀" checked type="checkbox" name="room-lion" id="class-a" required /><label for="class-a">회고 A팀</label> <input value="회고B팀" type="checkbox" name="room-lion" id="class-b" required /><label for="class-b">회고 B팀</label></p>
+                <p><input value="회고1팀" checked type="radio" name="techit-class" id="class-1" required /><label for="class-1">회고 1팀</label> <input value="회고2팀" type="radio" name="techit-class" id="class-2" required /><label for="class-2">회고 2팀</label></p>
                 <button type="submit">전송</button>
             </fieldset>
         </form>
