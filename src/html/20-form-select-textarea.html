@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>select textarea | Techit</title>
+        <style>
+            .sr-only {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap;
+                border-width: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>select 요소</h1>
+
+        <h1>textarea</h1>
+
+        <form action="/" method="get">
+            <div>
+                <label for="message"
+                    >내용
+                    <span>
+                        <span class="sr-only">필수</span>
+                        <span aria-hidden="true">*</span>
+                    </span>
+                </label>
+                <textarea name="" id="message" rows="10" cols="50" required></textarea>
+            </div>
+        </form>
+    </body>
+</html>
