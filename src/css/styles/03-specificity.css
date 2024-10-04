@@ -1,0 +1,37 @@
+body {
+    margin: 10px;
+    border: solid 10px greenyellow;
+    padding: 20px;
+    color: aqua;
+}
+
+@layer lion, like;
+
+@layer like {
+    p {
+        color: red;
+    }
+}
+
+@layer lion {
+    p {
+        color: green;
+    }
+}
+
+/* cascade(캐스캐이드, 겹침) */
+/* h1 {
+    color: blueviolet;
+}
+
+p {
+    color: orange;
+}
+
+#school.like {
+    color: gray;
+}
+
+#school {
+    color: red;
+} */
