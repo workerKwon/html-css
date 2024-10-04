@@ -1,0 +1,79 @@
+/* 전체 선택자 */
+* {
+    color: orange;
+}
+
+/* 요소 선택자 */
+html {
+    font-size: 0.625em;
+}
+
+/* 속성 선택자 */
+[title] {
+    color: pink;
+}
+
+/* 자손 결합 선택자 : 깊이 상관없이 p 밑에 있는 span이라면 모두 적용 */
+p span {
+    color: skyblue;
+}
+
+/* 자식 선택자 : 바로 아래의 자식에게만 적용 */
+p > span {
+    text-decoration: underline;
+}
+
+h1::before {
+    content: "첫번째 자식 요소";
+}
+
+h1::after {
+    content: "마지막 자식 요소";
+}
+
+p::first-letter {
+    font-size: 3.5rem;
+}
+
+/* 드래그 블록을 잡았을 때 */
+::selection {
+    background-color: darkblue;
+    color: white;
+}
+
+:root {
+    font-size: 0.9em;
+}
+
+/* 선택자 그룹화 */
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+    background-color: yellow;
+    color: black;
+}
+
+/* 가상 클래스를 이용한 선택자 그룹화 */
+:is(.heading, h2, h3, h4, h5, h6) span {
+    background-color: salmon;
+    color: blue;
+}
+
+/* 우선순위 중요도가 가장 낮다. */
+:where(h1, h2, h3, h4, h5, h6) span {
+    background-color: lightgreen;
+    color: red;
+}
+
+h6:has(+ p) {
+    border: solid 1px green;
+    padding: 10px;
+}
+
+p:has(> strong) {
+    border: solid 1px green;
+    padding: 10px;
+}
