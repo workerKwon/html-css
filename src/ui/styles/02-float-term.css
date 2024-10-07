@@ -1,0 +1,57 @@
+@import "./../../common/best-reset.css";
+
+body {
+    margin: 50px;
+}
+
+.term {
+    background-color: #eee;
+    padding: 16px;
+    width: 250px;
+    inline-size: 250px;
+}
+
+.term-headline {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.term-list {
+    font-size: 12px;
+    margin-block-start: 16px;
+}
+
+.term-wrapper {
+    display: flow-root;
+    margin-block-start: 12px;
+}
+
+/* .term-wrapper:nth-child(even) {
+    border: 1px solid currentColor;
+} */
+
+/* .term-wrapper:nth-child(even) .term-subject,
+.term-wrapper:nth-child(even) .term-description {
+    background-color: aqua;
+} */
+
+.term-subject {
+    inline-size: 142px;
+    color: #295486;
+    font-weight: 600;
+}
+
+.term-description {
+    inline-size: 142px;
+    margin-block-start: 4px;
+}
+
+.term-wrapper:nth-child(odd) :is(.term-subject, .term-description) {
+    float: inline-end;
+    margin-inline-start: 16px;
+}
+
+.term-wrapper:nth-child(even) :is(.term-subject, .term-description) {
+    float: inline-start;
+    margin-inline-end: 16px;
+}
