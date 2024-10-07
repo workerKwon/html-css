@@ -1,0 +1,66 @@
+/* 요소별 배경색상 */
+span {
+    background-color: pink;
+}
+div {
+    background-color: yellow;
+}
+
+div + div {
+    background-color: lightgreen;
+}
+
+/* 인라인 상자 - 크기지정 */
+span {
+    width: 200px;
+    inline-size: 200px;
+    height: 200px;
+    block-size: 200px;
+}
+/* 인라인 요소는 box 사이즈가 컨텐츠 크기에 의해 결정되기 때문에 width, height를 주는게 의미가 없다 */
+
+/* 블록 상자 - 크기 지정 */
+.likelion {
+    width: 800px;
+    inline-size: 800px;
+    border: 10px solid currentColor;
+    padding: 50px;
+    /* margin: 50px; */
+    margin-left: auto;
+    margin-inline-start: auto;
+}
+
+/* Margin 속성 */
+.techit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-block: 20px;
+}
+
+/* 마진은 음수로도 넣는게 가능하다 */
+.school {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-block: -20px;
+}
+
+.negative {
+    background-color: orange;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-block: -10px;
+}
+
+section {
+    border: 1px solid currentColor;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-block: 50px;
+}
+
+/* 인라인 요소는 마진 병합이 안된다 */
+span {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-inline: 20px;
+}
