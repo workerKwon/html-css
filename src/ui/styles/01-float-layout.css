@@ -1,0 +1,72 @@
+@import "./../../common/reset.css";
+
+.header {
+    background-color: yellow;
+}
+.visual {
+    background-color: pink;
+}
+.main {
+    background-color: lime;
+}
+.slogan {
+    background-color: skyblue;
+}
+.footer {
+    background-color: orange;
+}
+
+.header,
+.visual,
+.main,
+.slogan,
+.footer {
+    width: 940px;
+    inline-size: 940px;
+    margin: 0 auto;
+}
+
+.header,
+.visual,
+.slogan,
+.footer {
+    height: 10vh;
+    block-size: 10vh;
+}
+
+.main {
+    box-sizing: border-box;
+    /* border: 1px solid currentColor; */
+    display: flow-root;
+    padding-inline: 15px;
+}
+
+.group {
+    background-color: purple;
+    color: white;
+    margin-inline: 15px;
+    height: 60vh;
+    block-size: 60vh;
+}
+
+.group1 {
+    float: inline-start;
+    width: 250px;
+    inline-size: 250px;
+}
+
+.group2 {
+    float: inline-start;
+    width: 380px;
+    inline-size: 380px;
+}
+
+.group3 {
+    float: inline-start;
+    width: 190px;
+    inline-size: 190px;
+}
+
+.slogan {
+    clear: both;
+}
