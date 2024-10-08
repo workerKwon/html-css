@@ -1,0 +1,50 @@
+@import "./../../common/reset.css";
+
+/* custom property 선택자 :root */
+:root {
+    /* 색상 사용자 정의 */
+    --yellow: #fff100;
+    --blue: #006bff;
+    --skyblue: #08c2ff;
+    --aqua: #bcf2f6;
+    --orange: #fd8851;
+    --orangered: #ff6500;
+
+    --primary: var(--orange);
+    --secondary: var(--blue);
+
+    /* 사용자 정의 여백 */
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-base: 16px;
+    --space-lg: 20px;
+    --space-xl: 24px;
+
+    --default-space: var(--space-lg);
+
+    /* 사용자 정의 글자 크기 */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+
+    --default-font-size: var(--text-sm);
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: var(--default-font-size);
+}
+
+p {
+    margin: var(--default-space);
+}
+
+/* 지역 변수 */
+.local-variable {
+    --blue: #1e3e62;
+
+    color: var(--blue);
+}
