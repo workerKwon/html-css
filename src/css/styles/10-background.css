@@ -1,0 +1,33 @@
+@import "./../../common/normalize.css";
+
+body {
+    margin: 50px;
+    background-color: yellow;
+    background-image: url(./../../assets/images/rabbit.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    min-block-size: 100vh;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.text-gradient {
+    font-size: 3.5rem;
+    font-weight: 900;
+    background-color: lightcoral;
+    margin-block: 20px;
+    background-image: linear-gradient(red, orange, green, darkblue, purple);
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-origin {
+    inline-size: 800px;
+    margin-inline: auto;
+    /* background-color: pink;
+    background-image: url(./../../assets/thumbnail/meeting-room.jpg);
+    background-origin: border-box; */
+    padding: 20px;
+    border: 20px solid hsla(350 50% 50% / 0.2);
+    background: salmon url(./../../assets/thumbnail/meeting-room.jpg) border-box;
+}
