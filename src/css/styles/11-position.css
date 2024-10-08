@@ -1,0 +1,39 @@
+@import "./../../common/modern-reset.css";
+
+div {
+    font-size: 3rem;
+    border: 1px solid currentColor;
+    padding: 10px;
+}
+
+.static {
+    background: yellowgreen;
+}
+
+.fixed {
+    background: hsla(250, 50%, 50%, 1);
+    position: fixed;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+}
+
+.relative {
+    position: relative;
+    inset-block-start: 50px;
+    inset-inline-start: 50px;
+}
+
+.absolute {
+    background: sandybrown;
+    position: absolute;
+    inset-inline-start: 100px;
+    inset-block-start: 0px;
+}
+
+.sticky {
+    background-color: aquamarine;
+    padding: 20px;
+    margin-block: 100px;
+    position: sticky;
+    inset-block-start: 0;
+}
