@@ -1,0 +1,48 @@
+@import "./../../common/best-reset.css";
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+main {
+    inline-size: 70%;
+    margin-inline: auto;
+}
+
+form {
+    text-align: end;
+}
+
+table {
+    border-block: 2px solid #24388d;
+    color: #24388d;
+    border-collapse: collapse;
+
+    thead {
+        th {
+            padding: 10px;
+        }
+    }
+
+    tbody {
+        tr {
+            border-block: 1px solid #24388d;
+
+            td {
+                padding: 10px;
+
+                p {
+                    color: #878787;
+                }
+            }
+        }
+    }
+}
