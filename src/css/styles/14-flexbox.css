@@ -1,0 +1,43 @@
+@import "./../../common/mini-reset.css";
+
+body,
+h1 {
+    margin: 50px;
+}
+
+h2 {
+    border: 1px solid currentColor;
+    inline-size: 200px;
+    block-size: 200px;
+    align-content: center;
+    text-align: center;
+}
+
+.flex-basic {
+    block-size: 600px;
+    background: yellow;
+    inline-size: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+    align-content: start;
+    gap: 20px;
+}
+
+.flex-item {
+    background-color: pink;
+    inline-size: 400px;
+    block-size: 200px;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.flex-item:nth-child(odd) {
+    order: 1;
+}
+
+.flex-item1 {
+    /* flex-shrink: 2; */
+}
