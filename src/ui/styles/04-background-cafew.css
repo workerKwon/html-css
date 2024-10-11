@@ -1,0 +1,34 @@
+@import "./../../common/best-reset.css";
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+main {
+    block-size: 80vh;
+    inline-size: 60%;
+    margin-inline: auto;
+    position: relative;
+}
+
+figure {
+    position: absolute;
+}
+
+.cafew-table {
+    inset-inline-start: 0;
+    inset-block-start: 0;
+}
+
+.cafew-barista {
+    inset-inline-end: 0;
+    inset-block-end: 0;
+}
