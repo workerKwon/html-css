@@ -1,0 +1,31 @@
+@import "./../../common/mini-reset.css";
+
+body {
+    margin: 50px;
+}
+
+.rwd-img {
+    inline-size: 20%;
+    border: 1px solid currentColor;
+}
+
+.float-wrapper {
+    background-color: yellow;
+    border: 1px solid currentColor;
+    display: flow-root;
+
+    div {
+        background-color: pink;
+        float: inline-start;
+        inline-size: 25%;
+        aspect-ratio: 1/1; /* inline-size를 기준으로 block-size를 몇대몇 비율로 할지 설정하는 속성 */
+    }
+}
+
+body {
+    background-color: yellow;
+
+    @media (max-width: 480px) {
+        background-color: lightblue;
+    }
+}
