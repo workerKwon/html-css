@@ -27,12 +27,15 @@ body {
     gap: 12px;
     min-inline-size: var(--container-size);
 
+    &:has(:focus) {
+        box-shadow: 0px 4px 4px 0px rgba(68, 131, 63, 0.15);
+    }
+
     .search-form {
-        display: flex;
-        flex: 1;
-        align-items: center;
+        display: contents;
 
         .search {
+            display: contents;
             flex: 1;
         }
 
@@ -55,7 +58,9 @@ body {
 }
 
 .button--icon-circle {
-    all: unset;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
 
     svg {
         display: block;
@@ -75,6 +80,7 @@ body {
         flex: 1;
         block-size: 20px;
         padding: 0.125rem 0.5rem;
+        outline: none;
 
         &::placeholder {
             color: var(--placeholer-text-color);
