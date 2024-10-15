@@ -1,9 +1,17 @@
 /* 폼 요소 초기화 - 상속 */
-input, button, select, textarea{
-  font: inherit;
+input,
+button,
+select,
+textarea {
+    font: inherit;
 }
 
 /* 기본 스타일 */
-body{
-  font-family: "Pretendard Variable", Pretendard, sans-serif;
+body {
+    margin: 50px;
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+}
+
+* :is(::before, ::after) {
+    box-sizing: border-box;
 }
